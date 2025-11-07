@@ -11,6 +11,7 @@ public class PlayerCharacter : MonoBehaviour
 {
     [SerializeField] private float horizontalSpeed;
     [SerializeField] private float jumpForce;
+    [SerializeField] private float rotationSpeed;
     [SerializeField] private float kazooieTime;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float standAngle;
@@ -44,17 +45,28 @@ public class PlayerCharacter : MonoBehaviour
         // Move left or right
         if (!keyboard.aKey.IsPressed() && keyboard.dKey.IsPressed())
         {
-            _rb.linearVelocity = new Vector2(horizontalSpeed, _rb.linearVelocity.y);
+            // Change the speed in the local coordinate system
+            Vector3 localVelocity = transform.InverseTransformVector(_rb.linearVelocity);
+            localVelocity.x = horizontalSpeed;
+            _rb.linearVelocity = transform.TransformVector(localVelocity);
+            
+            transform.Rotate(new Vector3(0, 0, 1), -rotationSpeed * Time.deltaTime);
         }
         else if (keyboard.aKey.IsPressed() && !keyboard.dKey.IsPressed())
         {
-            _rb.linearVelocity = new Vector2(-horizontalSpeed, _rb.linearVelocity.y);
+            // Change the speed in the local coordinate system
+            Vector3 localVelocity = transform.InverseTransformVector(_rb.linearVelocity);
+            localVelocity.x = -horizontalSpeed;
+            _rb.linearVelocity = transform.TransformVector(localVelocity);
+            
+            transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.deltaTime);
         }
         
         // Jump
         if ((_grounded || _currentKazooieTime > 0.0f) && _jumpCooldownTime <= 0.0f && keyboard.spaceKey.wasPressedThisFrame)
         {
-            _rb.AddForce(Vector2.up * jumpForce);
+            _rb.AddForce(transform.TransformVector(Vector2.up) * jumpForce);
+            
             _grounded = false;
             _currentKazooieTime = 0.0f;
             _jumpCooldownTime = jumpCooldown;
@@ -65,8 +77,8 @@ public class PlayerCharacter : MonoBehaviour
     {
         ContactFilter2D filter2D = new ContactFilter2D();
         filter2D.useNormalAngle = true;
-        filter2D.minNormalAngle = 90 - standAngle;
-        filter2D.maxNormalAngle = 90 + standAngle;
+        filter2D.minNormalAngle = transform.eulerAngles.z + 90 - standAngle;
+        filter2D.maxNormalAngle = transform.eulerAngles.z + 90 + standAngle;
         
         // https://discussions.unity.com/t/detect-when-player-is-touching-the-ground-for-2d/908738/9
         bool isOnGround = Physics2D.IsTouching(_collider, filter2D);

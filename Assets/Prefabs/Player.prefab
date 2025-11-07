@@ -106,7 +106,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 10
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -178,8 +178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f368912444dc8424b9409336c0c6485c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCharacter
-  horizontalSpeed: 3
+  horizontalSpeed: 5
   jumpForce: 300
+  rotationSpeed: 10
   kazooieTime: 0.2
   jumpCooldown: 0.1
   standAngle: 45
