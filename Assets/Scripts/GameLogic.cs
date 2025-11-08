@@ -27,7 +27,7 @@ namespace DefaultNamespace
 
         public void KillPlayer()
         {
-            ResetPlayer();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         private void Awake()
