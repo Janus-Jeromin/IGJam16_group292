@@ -16,6 +16,8 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private float kazooieTime;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float standAngle;
+    [SerializeField] private bool flipCameraOnly;
+    [SerializeField] private CameraConnector cameraConnector;
     
     private Rigidbody2D _rb;
     private Collider2D _collider;
@@ -92,6 +94,12 @@ public class PlayerCharacter : MonoBehaviour
             _grounded = false;
             _currentKazooieTime = 0.0f;
             _jumpCooldownTime = jumpCooldown;
+
+            // Either flip ourselves or the camera, depending on the game mode
+            if (flipCameraOnly)
+                cameraConnector.flipCamera = !cameraConnector.flipCamera;
+            else
+                transform.Rotate(new Vector3(0, 0, 1), 180);
         }
     }
     
