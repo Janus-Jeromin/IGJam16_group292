@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8816543579884608928}
   - component: {fileID: 6221613801493002005}
   - component: {fileID: -6520904824901854839}
+  - component: {fileID: 3458210075504075180}
   m_Layer: 0
   m_Name: RectangleWall
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 1}
+  m_LocalScale: {x: 41, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -150,3 +151,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeeeb1b1fb21fca9785d95c9e2c5c665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &3458210075504075180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597991699179811270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758e5ddb7a78816ea9b19b884b4eb14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallRendere
+  wallSprites:
+  - {fileID: 5663061954668274717, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: -1572255740, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: -566912172, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: -810413851, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: -280532257, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: -130634237, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: -1918455767, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}
+  - {fileID: 2091769500, guid: cfc2e5fd69922a3648e0eb66d6c182ca, type: 3}

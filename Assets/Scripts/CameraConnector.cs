@@ -13,6 +13,9 @@ public class CameraConnector : MonoBehaviour
 
     [SerializeField] private Transform _background1;
     [SerializeField] private Transform _background2;
+    
+    [SerializeField] private float _parallaxFactor1 = 0.9f;
+    [SerializeField] private float _parallaxFactor2 = 0.2f;
 
     private void Start()
     {
@@ -38,16 +41,16 @@ public class CameraConnector : MonoBehaviour
         {
             // Move the background to create a parallax effect
             Vector3 backgroundPosition = _background1.position;
-            backgroundPosition.x += (_camera.transform.position.x - oldPosition.x) * 0.1f;
-            backgroundPosition.y += (_camera.transform.position.y - oldPosition.y) * 0.1f;
+            backgroundPosition.x += (_camera.transform.position.x - oldPosition.x) * _parallaxFactor1;
+            backgroundPosition.y += (_camera.transform.position.y - oldPosition.y) * _parallaxFactor1;
             _background1.position = backgroundPosition;
         }
 
         if (_background2 != null)
         {
             Vector3 background2 = _background2.position;
-            background2.x += (_camera.transform.position.x - oldPosition.x) * 0.2f;
-            background2.y += (_camera.transform.position.y - oldPosition.y) * 0.2f;
+            background2.x += (_camera.transform.position.x - oldPosition.x) * _parallaxFactor1;
+            background2.y += (_camera.transform.position.y - oldPosition.y) * _parallaxFactor1;
             _background2.position = background2;
         }
     }

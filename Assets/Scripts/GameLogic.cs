@@ -29,7 +29,7 @@ namespace DefaultNamespace
         private bool _hasLost = false;
         
         private float _timeUntilReset = 1.5f;
-
+ 
         public void KillPlayer()
         {
             _player.GetComponent<PlayerCharacter>().Die();
