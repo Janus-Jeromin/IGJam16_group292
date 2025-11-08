@@ -24,23 +24,35 @@ namespace DefaultNamespace
         [SerializeField] private string _nextLevelName;
 
         private bool _hasWon = false;
-        
+
+        public void KillPlayer()
+        {
+            ResetPlayer();
+        }
+
+        private void Awake()
+        {
+            Instance = this;
+        }
+
         private void Start()
         {
-            _player.position = _startPoint.position;
-            _player.rotation = _startPoint.rotation;
-            
-            Instance = this;
+            ResetPlayer();
         }
         
         private void Update()
         {
             // Check if player reached the end point
-            float distanceToEndPoint = Vector3.Distance(_player.position, _endPoint.position);
+            float distanceToEndPoint = Vector3.Distance(Player.position, _endPoint.position);
             if (distanceToEndPoint <= _endPointDetectionRadius)
             {
                 OnGameWon();
             }
+        }
+
+        private void ResetPlayer()
+        {
+            _player.GetComponent<PlayerCharacter>().ResetPlayer(_startPoint.position, _startPoint.rotation);
         }
         
         private void OnGameWon()

@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using DefaultNamespace;
 using Random = UnityEngine.Random;
 
 /// <summary>
@@ -38,7 +39,7 @@ public class PlayerCharacter : MonoBehaviour
     private bool _inputLeft;
     private bool _inputRight;
     
-    void Start()
+    private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _grounded = false;
@@ -81,7 +82,7 @@ public class PlayerCharacter : MonoBehaviour
             // If we touch the left wall at an angle, slow down the speed correspondingly.
             Vector3 localVelocity = transform.InverseTransformVector(_rb.linearVelocity);
             localVelocity.x = -horizontalSpeed * _effectiveMovementLeft;
-            _rb.linearVelocity = transform.TransformVgtor(localVelocity);
+            _rb.linearVelocity = transform.TransformVector(localVelocity);
             
             transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.fixedDeltaTime);
         }
@@ -117,6 +118,21 @@ public class PlayerCharacter : MonoBehaviour
 
         // Clear discrete input
         _inputJump = false;
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check collision with a danger zone
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Danger Zone"))
+            GameLogic.Instance.KillPlayer();
+    }
+
+    // Is called by the game logic after the player has been killed or at the start of the level
+    public void ResetPlayer(Vector3 position, Quaternion rotation)
+    {
+        transform.position = position;
+        transform.rotation = rotation;
+        _rb.linearVelocity = Vector2.zero;
     }
     
     void CheckCollisionNormals()
