@@ -7,7 +7,6 @@ using System.Collections.Generic;
 /// Class to move the player character.
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Collider2D))]
 public class PlayerCharacter : MonoBehaviour
 {
     [SerializeField] private float horizontalSpeed;
@@ -20,13 +19,12 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private CameraConnector cameraConnector;
     
     private Rigidbody2D _rb;
-    private Collider2D _collider;
     private bool _grounded;
     private float _currentKazooieTime;
     private float _jumpCooldownTime;
     
     // Maintain like here: https://stackoverflow.com/a/68654363
-    private Dictionary<string, Collision2D> _currentCollisions;
+    private Dictionary<string, List<Vector2>> _currentContactNormals; // Global coordinates
     
     // Is only valid if there is any collision at all. Is updated each Update().
     // Values refer to the local coordinate system.
@@ -39,11 +37,10 @@ public class PlayerCharacter : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _collider = GetComponent<Collider2D>();
         _grounded = false;
         _currentKazooieTime = 0.0f;
         _jumpCooldownTime = 0.0f;
-        _currentCollisions = new Dictionary<string, Collision2D>();
+        _currentContactNormals = new Dictionary<string, List<Vector2>>();
         _upmostCollisionNormalAngle = 0;
         _leftmostCollisionNormalScalarProd = -1;
         _rightmostCollisionNormalScalarProd = -1;
@@ -103,19 +100,34 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
     
-    void OnCollisionEnter2D (Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        _currentCollisions[collision.collider.name] = collision;
+        UpdateCollision(collision, false);
     }
     
     void OnCollisionStay2D(Collision2D collision)
     {
-        _currentCollisions[collision.collider.name] = collision;
+        UpdateCollision(collision, false);
     }
     
-    void OnCollisionExit2D (Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
-        _currentCollisions.Remove(collision.collider.name);
+        UpdateCollision(collision, true);
+    }
+
+    void UpdateCollision(Collision2D collision, bool bRemoveOnly)
+    {
+        _currentContactNormals.Remove(collision.collider.name);
+
+        if (bRemoveOnly)
+            return;
+        
+        List<Vector2> listContacts = new List<Vector2>();
+
+        foreach (var contactPoint in collision.contacts)
+            listContacts.Add(new Vector2(contactPoint.normal.x, contactPoint.normal.y));
+        
+        _currentContactNormals[collision.collider.name] = listContacts;
     }
 
     void CheckCollisionNormals()
@@ -124,16 +136,11 @@ public class PlayerCharacter : MonoBehaviour
         _leftmostCollisionNormalScalarProd = 0;
         _rightmostCollisionNormalScalarProd = 0;
         
-        // TODO the list of collisions seems weird. When I expect two different contact point normals,
-        //      there is only one normal but twice.
-        foreach (var collision in _currentCollisions)
+        foreach (var normals in _currentContactNormals)
         {
-            ContactPoint2D[] contactPoints = new ContactPoint2D[collision.Value.contactCount];
-            collision.Value.GetContacts(contactPoints);
-            
-            foreach (var contactPoint in contactPoints)
+            foreach (var normal in normals.Value)
             {
-                Vector2 localNormal = transform.InverseTransformDirection(contactPoint.normal);
+                Vector2 localNormal = transform.InverseTransformDirection(normal);
                 
                 float angleUp = Vector2.Angle(localNormal, Vector2.up);
                 float scalarProdLeft = Vector2.Dot(localNormal, Vector2.left);
@@ -148,7 +155,7 @@ public class PlayerCharacter : MonoBehaviour
 
     void CheckGrounded()
     {
-        if (_currentCollisions.Count > 0 && _upmostCollisionNormalAngle <= standAngle)
+        if (_currentContactNormals.Count > 0 && _upmostCollisionNormalAngle <= standAngle)
         {
             _grounded = true;
             
