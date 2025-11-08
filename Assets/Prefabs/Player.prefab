@@ -339,3 +339,4 @@ MonoBehaviour:
   flipCameraOnly: 0
   collisionHelper: {fileID: 41428069169309680}
   cameraConnector: {fileID: 0}
+  curse: 0.75

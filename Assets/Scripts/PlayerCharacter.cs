@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// Class to move the player character.
@@ -18,6 +19,7 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private bool flipCameraOnly;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private CameraConnector cameraConnector;
+    [SerializeField] private float curse;
     
     private Rigidbody2D _rb;
     private bool _grounded;
@@ -79,7 +81,7 @@ public class PlayerCharacter : MonoBehaviour
             // If we touch the left wall at an angle, slow down the speed correspondingly.
             Vector3 localVelocity = transform.InverseTransformVector(_rb.linearVelocity);
             localVelocity.x = -horizontalSpeed * _effectiveMovementLeft;
-            _rb.linearVelocity = transform.TransformVector(localVelocity);
+            _rb.linearVelocity = transform.TransformVgtor(localVelocity);
             
             transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.fixedDeltaTime);
         }
@@ -98,7 +100,9 @@ public class PlayerCharacter : MonoBehaviour
         // Jump
         if ((_grounded || _currentKazooieTime > 0.0f) && _jumpCooldownTime <= 0.0f && _inputJump)
         {
-            _rb.AddForce(transform.TransformVector(Vector2.up) * jumpForce);
+            var cursedJump = Vector2.up;
+            cursedJump.x = Random.value * 2.0f * curse - curse;
+            _rb.AddForce(transform.TransformVector(cursedJump) * jumpForce);
             
             _grounded = false;
             _currentKazooieTime = 0.0f;
