@@ -2,38 +2,42 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject _loadOverlay;
-    [SerializeField] private string _startLevel;
     [SerializeField] private GameObject _main;
-    [SerializeField] private GameObject _optionsMenu;
-    [SerializeField] private GameObject _creditsMenu;
     [SerializeField] private Slider _curseSlider;
     [SerializeField] private Slider _volumeSlider;
+
+    private List<GameObject> _listSubmenus;
 
     private void Awake()
     {
         _main.SetActive(true);
         _loadOverlay.SetActive(false);
-        _optionsMenu.SetActive(false);
-        _creditsMenu.SetActive(false);
         
         _curseSlider.value = PlayerPrefs.GetFloat("Curse", 0.0f);
         _volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1.0f);
+        
+        _listSubmenus =  new List<GameObject>();
     }
 
-    public void OnStartClicked()
+    public void OnStartLevelClicked(string levelName)
     {
         _loadOverlay.SetActive(true);
-        SceneManager.LoadSceneAsync(_startLevel);
-        this.gameObject.SetActive(false);
+        SceneManager.LoadSceneAsync(levelName);
+        gameObject.SetActive(false);
     }
 
-    public void OnOptionsClicked()
+    public void OnOpenSubmenuClicked(GameObject submenu)
     {
-        _optionsMenu.SetActive(true);
+        if (!_listSubmenus.Contains(submenu)) 
+            _listSubmenus.Add(submenu);
+        
+        submenu.SetActive(true);
         _main.SetActive(false);
     }
 
@@ -49,16 +53,12 @@ public class MainMenuManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public void OnCreditsClicked()
-    {
-        _creditsMenu.SetActive(true);
-        _main.SetActive(false);
-    }
-
     public void OnCloseSubmenuClicked()
     {
-        _optionsMenu.SetActive(false);
-        _creditsMenu.SetActive(false);
+        foreach (var submenu in _listSubmenus)
+        {
+            submenu.SetActive(false);
+        }
         _main.SetActive(true);
     }
 
