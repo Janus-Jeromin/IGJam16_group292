@@ -14,7 +14,6 @@ namespace DefaultNamespace
         public float WallBounce => _wallBounce;
         public float WallBounceThresholdAngle => _wallBounceThresholdAngle;
         
-        
         [SerializeField] private Transform _player;
         [SerializeField] private Transform _startPoint;
         [SerializeField] private Transform _endPoint;
@@ -27,10 +26,14 @@ namespace DefaultNamespace
         [SerializeField] private AudioSource _audioSourceLevelStart;
 
         private bool _hasWon = false;
+        private bool _hasLost = false;
+        
+        private float _timeUntilReset = 1.5f;
 
         public void KillPlayer()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            _player.GetComponent<PlayerCharacter>().Die();
+            _hasLost = true;
         }
 
         private void Awake()
@@ -46,6 +49,16 @@ namespace DefaultNamespace
         
         private void Update()
         {
+            if (_hasLost)
+            {
+                _timeUntilReset -= Time.deltaTime;
+
+                if (_timeUntilReset <= 0.0f)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
+            }
+            
             // TODO use input actions instead
             if (Keyboard.current.escapeKey.wasPressedThisFrame)
             {

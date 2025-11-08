@@ -22,6 +22,7 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private AudioSource audioSourceDeath;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private CameraConnector cameraConnector;
+    [SerializeField] private ParticleSystem explosion;
     
     private Rigidbody2D _rb;
     private bool _grounded;
@@ -143,6 +144,14 @@ public class PlayerCharacter : MonoBehaviour
         transform.position = position;
         transform.rotation = rotation;
         _rb.linearVelocity = Vector2.zero;
+    }
+
+    public void Die()
+    {
+        GetComponent<ParticleSystem>().Play();
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<AudioSource>().Play();
+        _rb.simulated = false;
     }
     
     void CheckCollisionNormals()
