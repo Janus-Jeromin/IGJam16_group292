@@ -48,8 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraConnector
   flipCamera: 0
   _camera: {fileID: 0}
-  _followSpeedRotation: 1
+  _followSpeedRotation: 3.5
   _followSpeedMovement: 4
+  _background1: {fileID: 0}
+  _background2: {fileID: 0}
 --- !u!114 &7282219354679171791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhysicsConnector
   _maxGravity: 9.81
-  _gravityLerpSpeed: 1
+  _gravityLerpSpeed: 1e+20
 --- !u!114 &1548549033825091094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,4 +84,4 @@ MonoBehaviour:
   _wallBounceThresholdAngle: 45
   _wallBounce: 10
   _endPointDetectionRadius: 1
-  _nextLevelName: 
+  _nextLevelName: Level 02
