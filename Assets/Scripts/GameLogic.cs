@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
@@ -22,6 +23,7 @@ namespace DefaultNamespace
         
         [SerializeField] private float _endPointDetectionRadius = 1.0f;
         [SerializeField] private string _nextLevelName;
+        [SerializeField] private string _menuSceneName = "Main Menu";
 
         private bool _hasWon = false;
 
@@ -42,6 +44,18 @@ namespace DefaultNamespace
         
         private void Update()
         {
+            // TODO use input actions instead
+            if (Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                if (!string.IsNullOrEmpty(_menuSceneName))
+                {
+                    SceneManager.LoadScene(_menuSceneName);
+                    return;
+                }
+                else
+                    Debug.Log("There is no main menu set.");
+            }
+            
             // Check if player reached the end point
             float distanceToEndPoint = Vector3.Distance(Player.position, _endPoint.position);
             if (distanceToEndPoint <= _endPointDetectionRadius)

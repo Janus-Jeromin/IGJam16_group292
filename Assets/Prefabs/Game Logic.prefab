@@ -85,3 +85,4 @@ MonoBehaviour:
   _wallBounce: 10
   _endPointDetectionRadius: 1
   _nextLevelName: Level 02
+  _menuSceneName: Main Menu
