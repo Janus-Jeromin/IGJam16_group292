@@ -11,8 +11,10 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject _main;
     [SerializeField] private Slider _curseSlider;
     [SerializeField] private Slider _volumeSlider;
+    [SerializeField] private AudioSource _audioSourceVolumeChanged;
 
     private List<GameObject> _listSubmenus;
+    private bool _wasAwaken = false;
 
     private void Awake()
     {
@@ -21,8 +23,9 @@ public class MainMenuManager : MonoBehaviour
         
         _curseSlider.value = PlayerPrefs.GetFloat("Curse", 0.0f);
         _volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1.0f);
-        
         _listSubmenus =  new List<GameObject>();
+
+        _wasAwaken = true;
     }
 
     public void OnStartLevelClicked(string levelName)
@@ -51,6 +54,12 @@ public class MainMenuManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Volume", _volumeSlider.value);
         PlayerPrefs.Save();
+
+        AudioListener.volume = _volumeSlider.value;
+        
+        // Do not play the sound before we even started
+        if (_wasAwaken && !_audioSourceVolumeChanged.isPlaying) 
+            _audioSourceVolumeChanged.Play();
     }
 
     public void OnCloseSubmenuClicked()

@@ -24,6 +24,7 @@ namespace DefaultNamespace
         [SerializeField] private float _endPointDetectionRadius = 1.0f;
         [SerializeField] private string _nextLevelName;
         [SerializeField] private string _menuSceneName = "Main Menu";
+        [SerializeField] private AudioSource _audioSourceLevelStart;
 
         private bool _hasWon = false;
 
@@ -40,6 +41,7 @@ namespace DefaultNamespace
         private void Start()
         {
             ResetPlayer();
+            _audioSourceLevelStart.Play();
         }
         
         private void Update()

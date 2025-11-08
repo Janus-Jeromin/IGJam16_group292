@@ -18,6 +18,8 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float standAngle;
     [SerializeField] private bool flipCameraOnly;
+    [SerializeField] private AudioSource audioSourceJump;
+    [SerializeField] private AudioSource audioSourceDeath;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private CameraConnector cameraConnector;
     
@@ -114,6 +116,9 @@ public class PlayerCharacter : MonoBehaviour
                 cameraConnector.flipCamera = !cameraConnector.flipCamera;
             else
                 transform.Rotate(new Vector3(0, 0, 1), 180);
+            
+            // Play corresponding sound
+            audioSourceJump.Play();
         }
 
         // Clear discrete input
@@ -124,7 +129,12 @@ public class PlayerCharacter : MonoBehaviour
     {
         // Check collision with a danger zone
         if (collision.gameObject.layer == LayerMask.NameToLayer("Danger Zone"))
+        {
+            // Play the corresponding sound
+            audioSourceDeath.Play();
+            
             GameLogic.Instance.KillPlayer();
+        }
     }
 
     // Is called by the game logic after the player has been killed or at the start of the level
