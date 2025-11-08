@@ -7,6 +7,7 @@ public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject _loadOverlay;
     [SerializeField] private string _startLevel;
+    [SerializeField] private GameObject _main;
     [SerializeField] private GameObject _optionsMenu;
     [SerializeField] private GameObject _creditsMenu;
     [SerializeField] private Slider _curseSlider;
@@ -14,6 +15,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void Awake()
     {
+        _main.SetActive(true);
         _loadOverlay.SetActive(false);
         _optionsMenu.SetActive(false);
         _creditsMenu.SetActive(false);
@@ -32,6 +34,7 @@ public class MainMenuManager : MonoBehaviour
     public void OnOptionsClicked()
     {
         _optionsMenu.SetActive(true);
+        _main.SetActive(false);
     }
 
     public void OnCurseSliderChanged()
@@ -49,12 +52,14 @@ public class MainMenuManager : MonoBehaviour
     public void OnCreditsClicked()
     {
         _creditsMenu.SetActive(true);
+        _main.SetActive(false);
     }
 
     public void OnCloseSubmenuClicked()
     {
         _optionsMenu.SetActive(false);
         _creditsMenu.SetActive(false);
+        _main.SetActive(true);
     }
 
     public void OnQuitClicked()
