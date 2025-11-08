@@ -30,10 +30,9 @@ public class PlayerCharacter : MonoBehaviour
     // Values refer to the local coordinate system.
     
     private float _upmostCollisionNormalAngle; // The angle between the local up vector and the closest contact normal
-    private float _leftmostCollisionNormalScalarProd; // The effect of the leftmost contact normal on the player. Is at least 0.
-    private float _rightmostCollisionNormalScalarProd; // The effect of the rightmost contact normal on the player. Is at least 0.
+    private float _effectiveMovementLeft; // Depending on the slope of the ground or wall, determines the effective horizontal movement.
+    private float _effectiveMovementRight; // Depending on the slope of the ground or wall, determines the effective horizontal movement.
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -42,18 +41,17 @@ public class PlayerCharacter : MonoBehaviour
         _jumpCooldownTime = 0.0f;
         _currentContactNormals = new Dictionary<string, List<Vector2>>();
         _upmostCollisionNormalAngle = 0;
-        _leftmostCollisionNormalScalarProd = -1;
-        _rightmostCollisionNormalScalarProd = -1;
+        _effectiveMovementLeft = 0;
+        _effectiveMovementRight = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // We need to do this first because the results are used in other functions
         CheckCollisionNormals();
         
-        _currentKazooieTime -= Time.deltaTime;
-        _jumpCooldownTime -= Time.deltaTime;
+        _currentKazooieTime -= Time.fixedDeltaTime;
+        _jumpCooldownTime -= Time.fixedDeltaTime;
         
         CheckGrounded();
         
@@ -66,10 +64,10 @@ public class PlayerCharacter : MonoBehaviour
             // Change the speed in the local coordinate system.
             // If we touch the left wall at an angle, slow down the speed correspondingly.
             Vector3 localVelocity = transform.InverseTransformVector(_rb.linearVelocity);
-            localVelocity.x = -horizontalSpeed * (1.0f - _rightmostCollisionNormalScalarProd);
+            localVelocity.x = -horizontalSpeed * _effectiveMovementLeft;
             _rb.linearVelocity = transform.TransformVector(localVelocity);
             
-            transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.fixedDeltaTime);
         }
         // Move right
         if (!keyboard.aKey.IsPressed() && keyboard.dKey.IsPressed())
@@ -77,10 +75,10 @@ public class PlayerCharacter : MonoBehaviour
             // Change the speed in the local coordinate system.
             // If we touch the right wall at an angle, slow down the speed correspondingly.
             Vector3 localVelocity = transform.InverseTransformVector(_rb.linearVelocity);
-            localVelocity.x = horizontalSpeed * (1.0f - _leftmostCollisionNormalScalarProd);
+            localVelocity.x = horizontalSpeed * _effectiveMovementRight;
             _rb.linearVelocity = transform.TransformVector(localVelocity);
             
-            transform.Rotate(new Vector3(0, 0, 1), -rotationSpeed * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, 1), -rotationSpeed * Time.fixedDeltaTime);
         }
         
         // Jump
@@ -133,8 +131,8 @@ public class PlayerCharacter : MonoBehaviour
     void CheckCollisionNormals()
     {
         _upmostCollisionNormalAngle = 180;
-        _leftmostCollisionNormalScalarProd = 0;
-        _rightmostCollisionNormalScalarProd = 0;
+        _effectiveMovementLeft = 1;
+        _effectiveMovementRight = 1;
         
         foreach (var normals in _currentContactNormals)
         {
@@ -142,13 +140,25 @@ public class PlayerCharacter : MonoBehaviour
             {
                 Vector2 localNormal = transform.InverseTransformDirection(normal);
                 
-                float angleUp = Vector2.Angle(localNormal, Vector2.up);
-                float scalarProdLeft = Vector2.Dot(localNormal, Vector2.left);
-                float scalarProdRight = Vector2.Dot(localNormal, Vector2.right);
-
-                _upmostCollisionNormalAngle = Math.Min(_upmostCollisionNormalAngle, angleUp);
-                _leftmostCollisionNormalScalarProd = Math.Max(_leftmostCollisionNormalScalarProd, scalarProdLeft);
-                _rightmostCollisionNormalScalarProd = Math.Max(_rightmostCollisionNormalScalarProd, scalarProdRight);
+                // Calculate the angle between the local up and the nearest normal
+                {
+                    float angleUp = Vector2.Angle(localNormal, Vector2.up);
+                    _upmostCollisionNormalAngle = Math.Min(_upmostCollisionNormalAngle, angleUp);
+                }
+                
+                // Calculate the slope for moving left
+                if (Vector2.Dot(localNormal, Vector2.right) >= 0.0f)
+                {
+                    float scalarProdTangentLeft = Math.Abs(Vector2.Dot(Quaternion.AngleAxis(90, Vector3.forward) * localNormal, Vector2.left));
+                    _effectiveMovementLeft = Math.Min(_effectiveMovementLeft, scalarProdTangentLeft);
+                }
+                
+                // Calculate the slop for moving right
+                if (Vector2.Dot(localNormal, Vector2.left) >= 0.0f)
+                {
+                    float scalarProdTangentRight = Math.Abs(Vector2.Dot(Quaternion.AngleAxis(90, Vector3.forward) * localNormal, Vector2.right));
+                    _effectiveMovementRight = Math.Min(_effectiveMovementRight, scalarProdTangentRight);
+                }
             }
         }
     }
