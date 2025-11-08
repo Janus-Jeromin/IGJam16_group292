@@ -16,15 +16,13 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float standAngle;
     [SerializeField] private bool flipCameraOnly;
+    [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private CameraConnector cameraConnector;
     
     private Rigidbody2D _rb;
     private bool _grounded;
     private float _currentKazooieTime;
     private float _jumpCooldownTime;
-    
-    // Maintain like here: https://stackoverflow.com/a/68654363
-    private Dictionary<string, List<Vector2>> _currentContactNormals; // Global coordinates
     
     // Is only valid if there is any collision at all. Is updated each Update().
     // Values refer to the local coordinate system.
@@ -33,20 +31,39 @@ public class PlayerCharacter : MonoBehaviour
     private float _effectiveMovementLeft; // Depending on the slope of the ground or wall, determines the effective horizontal movement.
     private float _effectiveMovementRight; // Depending on the slope of the ground or wall, determines the effective horizontal movement.
 
+    // Controls
+    private bool _inputJump;
+    private bool _inputLeft;
+    private bool _inputRight;
+    
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _grounded = false;
         _currentKazooieTime = 0.0f;
         _jumpCooldownTime = 0.0f;
-        _currentContactNormals = new Dictionary<string, List<Vector2>>();
         _upmostCollisionNormalAngle = 0;
         _effectiveMovementLeft = 0;
         _effectiveMovementRight = 0;
     }
 
+    private void Update()
+    {
+        // TODO use input actions instead of keys
+        var keyboard = Keyboard.current; 
+        
+        // Continuous inputs are always updated, discrete ones are set once and reset in the fixed update
+        if (keyboard.spaceKey.wasPressedThisFrame)
+            _inputJump = true;
+        
+        _inputLeft = keyboard.aKey.IsPressed() && !keyboard.dKey.IsPressed();
+        _inputRight = !keyboard.aKey.IsPressed() && keyboard.dKey.IsPressed();
+    }
+
     void FixedUpdate()
     {
+        collisionHelper.transform.SetPositionAndRotation(transform.position, transform.rotation);
+        
         // We need to do this first because the results are used in other functions
         CheckCollisionNormals();
         
@@ -54,12 +71,9 @@ public class PlayerCharacter : MonoBehaviour
         _jumpCooldownTime -= Time.fixedDeltaTime;
         
         CheckGrounded();
-        
-        // TODO use input actions instead of keys
-        var keyboard = Keyboard.current;
 
         // Move left
-        if (keyboard.aKey.IsPressed() && !keyboard.dKey.IsPressed())
+        if (_inputLeft)
         {
             // Change the speed in the local coordinate system.
             // If we touch the left wall at an angle, slow down the speed correspondingly.
@@ -70,7 +84,7 @@ public class PlayerCharacter : MonoBehaviour
             transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.fixedDeltaTime);
         }
         // Move right
-        if (!keyboard.aKey.IsPressed() && keyboard.dKey.IsPressed())
+        if (_inputRight)
         {
             // Change the speed in the local coordinate system.
             // If we touch the right wall at an angle, slow down the speed correspondingly.
@@ -82,7 +96,7 @@ public class PlayerCharacter : MonoBehaviour
         }
         
         // Jump
-        if ((_grounded || _currentKazooieTime > 0.0f) && _jumpCooldownTime <= 0.0f && keyboard.spaceKey.wasPressedThisFrame)
+        if ((_grounded || _currentKazooieTime > 0.0f) && _jumpCooldownTime <= 0.0f && _inputJump)
         {
             _rb.AddForce(transform.TransformVector(Vector2.up) * jumpForce);
             
@@ -96,45 +110,18 @@ public class PlayerCharacter : MonoBehaviour
             else
                 transform.Rotate(new Vector3(0, 0, 1), 180);
         }
+
+        // Clear discrete input
+        _inputJump = false;
     }
     
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        UpdateCollision(collision, false);
-    }
-    
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        UpdateCollision(collision, false);
-    }
-    
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        UpdateCollision(collision, true);
-    }
-
-    void UpdateCollision(Collision2D collision, bool bRemoveOnly)
-    {
-        _currentContactNormals.Remove(collision.collider.name);
-
-        if (bRemoveOnly)
-            return;
-        
-        List<Vector2> listContacts = new List<Vector2>();
-
-        foreach (var contactPoint in collision.contacts)
-            listContacts.Add(new Vector2(contactPoint.normal.x, contactPoint.normal.y));
-        
-        _currentContactNormals[collision.collider.name] = listContacts;
-    }
-
     void CheckCollisionNormals()
     {
         _upmostCollisionNormalAngle = 180;
         _effectiveMovementLeft = 1;
         _effectiveMovementRight = 1;
         
-        foreach (var normals in _currentContactNormals)
+        foreach (var normals in collisionHelper._currentContactNormals)
         {
             foreach (var normal in normals.Value)
             {
@@ -165,7 +152,7 @@ public class PlayerCharacter : MonoBehaviour
 
     void CheckGrounded()
     {
-        if (_currentContactNormals.Count > 0 && _upmostCollisionNormalAngle <= standAngle)
+        if (collisionHelper._currentContactNormals.Count > 0 && _upmostCollisionNormalAngle <= standAngle)
         {
             _grounded = true;
             
