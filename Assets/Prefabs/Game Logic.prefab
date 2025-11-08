@@ -46,9 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c258b06899952c3fa47304feab24231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraConnector
-  _player: {fileID: 0}
+  flipCamera: 0
   _camera: {fileID: 0}
-  _followSpeed: 5
+  _followSpeedRotation: 1
+  _followSpeedMovement: 4
 --- !u!114 &7282219354679171791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +62,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b790f8e06d050276db6c806537c3b1ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhysicsConnector
-  _player: {fileID: 0}
   _maxGravity: 9.81
   _gravityLerpSpeed: 1
 --- !u!114 &1548549033825091094
@@ -79,4 +79,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _startPoint: {fileID: 0}
   _endPoint: {fileID: 0}
-  _endPointDetectionRadius: 0.5
+  _wallBounceThresholdAngle: 45
+  _wallBounce: 10
+  _endPointDetectionRadius: 1
+  _nextLevelName: 

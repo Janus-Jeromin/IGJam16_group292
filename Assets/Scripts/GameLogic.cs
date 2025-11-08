@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
@@ -20,6 +21,10 @@ namespace DefaultNamespace
         [SerializeField] private float _wallBounce = 10.0f;
         
         [SerializeField] private float _endPointDetectionRadius = 1.0f;
+        [SerializeField] private string _nextLevelName;
+
+        private bool _hasWon = false;
+        
         private void Start()
         {
             _player.position = _startPoint.position;
@@ -34,13 +39,21 @@ namespace DefaultNamespace
             float distanceToEndPoint = Vector3.Distance(_player.position, _endPoint.position);
             if (distanceToEndPoint <= _endPointDetectionRadius)
             {
-                ObGameWon();
+                OnGameWon();
             }
         }
         
-        private void ObGameWon()
+        private void OnGameWon()
         {
-            throw new NotImplementedException();
+            if (_hasWon)
+                return;
+            
+            _hasWon = true;
+            
+            if (!string.IsNullOrEmpty(_nextLevelName)) 
+                SceneManager.LoadScene(_nextLevelName);
+            else
+                Debug.Log("There is no next level.");
         }
     }
 }

@@ -19,19 +19,16 @@ public class PlayerCharacterCollisionHelper : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionEnter2D"); // TODO REMOVE DEBUG
         UpdateCollision(collision, false);
     }
     
     void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionStay2D"); // TODO REMOVE DEBUG
         UpdateCollision(collision, false);
     }
     
     void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionExit2D"); // TODO REMOVE DEBUG
         UpdateCollision(collision, true);
     }
 
