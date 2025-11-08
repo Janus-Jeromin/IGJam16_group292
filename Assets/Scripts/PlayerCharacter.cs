@@ -20,7 +20,6 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private bool flipCameraOnly;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private CameraConnector cameraConnector;
-    [SerializeField] private float curse;
     
     private Rigidbody2D _rb;
     private bool _grounded;
@@ -101,6 +100,7 @@ public class PlayerCharacter : MonoBehaviour
         // Jump
         if ((_grounded || _currentKazooieTime > 0.0f) && _jumpCooldownTime <= 0.0f && _inputJump)
         {
+            var curse = PlayerPrefs.GetFloat("Curse", 0.0f);
             var cursedJump = Vector2.up;
             cursedJump.x = Random.value * 2.0f * curse - curse;
             _rb.AddForce(transform.TransformVector(cursedJump) * jumpForce);
