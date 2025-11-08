@@ -22,7 +22,7 @@ public class AutoDelete : MonoBehaviour
             
             if (transform.localScale.x < 0.01f)
             {
-                Destroy(this.gameObject);
+                this.gameObject.SetActive(false);
             }
         }
     }
