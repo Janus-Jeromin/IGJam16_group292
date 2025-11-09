@@ -333,7 +333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9074833650887625353
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3619,12 +3619,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b><size=46>Made by</size></b>\n\n\u2022 Guido\n\u2022 Marcel\n\u2022
-    Janus\n\n<b><size=46>External assets:</size></b>\n<size=26><color=#ffffff>\nWormhole
+  m_text: "<b><size=40>Made by</size></b>\n\n\u2022 Guido\n\u2022 Marcel\n\u2022
+    Janus\n\n<b><size=40>External assets:</size></b>\n<size=20><color=#ffffff>\nWormhole
     Sprite Animation by Hansj\xF6rg Malthaner, website: http://opengameart.org/users/varkalandar
     \n\u2192 https://opengameart.org/content/animated-portal-or-wormhole-several-variants\nSpace
     Wallpaper by Wenrexa, website: https://wenrexa.com/\r\n\u2192 https://opengameart.org/content/assets-free-space-backgrounds-in-4k\nCrystal
-    Cave Song 18 by cynicmusic, website: http://cynicmusic.com\n\u2192 https://opengameart.org/content/crystal-cave-song18\n</color></size>"
+    Cave Song 18 by cynicmusic, website: http://cynicmusic.com\n\u2192 https://opengameart.org/content/crystal-cave-song18\nWin
+    Jingle by Fupi\n\u2192 https://opengameart.org/content/win-jingle\n</color></size>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3651,8 +3652,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

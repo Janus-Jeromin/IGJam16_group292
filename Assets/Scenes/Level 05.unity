@@ -969,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 322078995}
     - target: {fileID: 1548549033825091094, guid: e81098f5cdb9d6f55b5848a59fe0f1e4, type: 3}
       propertyPath: _nextLevelName
-      value: Main Menu
+      value: Score Board
       objectReference: {fileID: 0}
     - target: {fileID: 1734776421339016441, guid: e81098f5cdb9d6f55b5848a59fe0f1e4, type: 3}
       propertyPath: _camera
