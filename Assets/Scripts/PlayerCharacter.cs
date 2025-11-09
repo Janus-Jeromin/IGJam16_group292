@@ -29,6 +29,7 @@ public class PlayerCharacter : MonoBehaviour
     private bool _grounded;
     private float _currentKazooieTime;
     private float _jumpCooldownTime;
+    private bool _dead;
     
     // Is only valid if there is any collision at all. Is updated each Update().
     // Values refer to the local coordinate system.
@@ -48,6 +49,7 @@ public class PlayerCharacter : MonoBehaviour
         _grounded = false;
         _currentKazooieTime = 0.0f;
         _jumpCooldownTime = 0.0f;
+        _dead = false;
         _upmostCollisionNormalAngle = 0;
         _effectiveMovementLeft = 0;
         _effectiveMovementRight = 0;
@@ -68,6 +70,10 @@ public class PlayerCharacter : MonoBehaviour
 
     void FixedUpdate()
     {
+        // If we are dead, there is nothing to update here
+        if (_dead)
+            return;
+        
         // For collision detection, the helper must be at the same spot as the controller
         collisionHelper.transform.SetPositionAndRotation(transform.position, transform.rotation);
         
@@ -156,6 +162,7 @@ public class PlayerCharacter : MonoBehaviour
         GetComponent<AudioSource>().Play();
         rendererModel.enabled = false;
         _rb.simulated = false;
+        _dead = true;
     }
     
     void CheckCollisionNormals()
