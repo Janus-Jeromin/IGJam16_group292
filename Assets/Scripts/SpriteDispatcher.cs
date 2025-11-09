@@ -17,9 +17,6 @@ public class WallRendere : MonoBehaviour
         Vector2 vecPixelSizeNew = wallSprites[index].bounds.size * wallSprites[index].pixelsPerUnit;
         Vector2 vecPixelSizeOld = renderer.sprite.bounds.size * renderer.sprite.pixelsPerUnit;
         
-        Debug.Log(vecPixelSizeNew);
-        Debug.Log(vecPixelSizeOld);
-        
         renderer.drawMode = SpriteDrawMode.Tiled;
         renderer.sprite = wallSprites[index];
         

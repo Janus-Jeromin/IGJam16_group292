@@ -11,8 +11,8 @@ public class LaserColor : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _color1 = new Color(Random.value, Random.value, Random.value);
-        _color2 = new Color(Random.value, Random.value, Random.value);
+        _color1 = new Color(Random.Range(0.5f, 1.2f), Random.Range(0.5f, 1.2f), Random.Range(0.5f, 1.2f));
+        _color2 = new Color(Random.Range(0.5f, 1.2f), Random.Range(0.5f, 1.2f), Random.Range(0.5f, 1.2f));
         _renderer = GetComponent<SpriteRenderer>();
         _renderer.color = _color1;
     }

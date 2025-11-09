@@ -1271,6 +1271,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8816543579884608928, guid: 228c5d5407087b9c390fd64baf1464b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: ff0f606beecb5be4b909b1bbcf7363f7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1708,62 +1712,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 876445768305228148, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 938503337513612985, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2147162218389860681, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 527336351ab395145816108a44a1a80e, type: 2}
-    - target: {fileID: 2147162218389860681, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177815110728901882, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: gameLogic
-      value: 
-      objectReference: {fileID: 595229103}
-    - target: {fileID: 5240711193018785245, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 5627853320926811814, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5627853320926811814, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5627853320926811814, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5627853320926811814, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 5881156159122447622, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8750130315626806352, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 9130588800222989534, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 9130588800222989534, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_ForceSendLayers.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9130588800222989534, guid: cd6252b1b73380b4180be9ad9ebd10d4, type: 3}
-      propertyPath: m_ForceReceiveLayers.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
