@@ -1,0 +1,2420 @@
+fileFormatVersion: 2
+guid: 010e2fec626a18c42bcfb5d343a85f8a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4146249474474468860
+    second: robot_turnaround_0
+  - first:
+      213: 8472340520595462671
+    second: robot_turnaround_1
+  - first:
+      213: 3197257362635023269
+    second: robot_turnaround_2
+  - first:
+      213: -7185726056190050875
+    second: robot_turnaround_3
+  - first:
+      213: 4919441963700313846
+    second: robot_turnaround_4
+  - first:
+      213: 869846833508257461
+    second: robot_turnaround_5
+  - first:
+      213: 4201373432753672808
+    second: robot_turnaround_6
+  - first:
+      213: -3546911637667517399
+    second: robot_turnaround_7
+  - first:
+      213: 8972619381095220085
+    second: robot_turnaround_8
+  - first:
+      213: 5493332837053034438
+    second: robot_turnaround_9
+  - first:
+      213: 6833741878079486968
+    second: robot_turnaround_10
+  - first:
+      213: -1534420974818419569
+    second: robot_turnaround_11
+  - first:
+      213: 5268701315295885844
+    second: robot_turnaround_12
+  - first:
+      213: 7463082994687896287
+    second: robot_turnaround_13
+  - first:
+      213: 6388103270554718944
+    second: robot_turnaround_14
+  - first:
+      213: -2983369552489212908
+    second: robot_turnaround_15
+  - first:
+      213: 6773036022017999729
+    second: robot_turnaround_16
+  - first:
+      213: -2004272526508019417
+    second: robot_turnaround_17
+  - first:
+      213: -5285398903306311129
+    second: robot_turnaround_18
+  - first:
+      213: 8003423799550736731
+    second: robot_turnaround_19
+  - first:
+      213: -1260174353964728546
+    second: robot_turnaround_20
+  - first:
+      213: 1892839791679382150
+    second: robot_turnaround_21
+  - first:
+      213: 7454375173921634964
+    second: robot_turnaround_22
+  - first:
+      213: -3222033757034117229
+    second: robot_turnaround_23
+  - first:
+      213: 6409969403051106750
+    second: robot_turnaround_24
+  - first:
+      213: -2838278550838447431
+    second: robot_turnaround_25
+  - first:
+      213: 1593172180529521042
+    second: robot_turnaround_26
+  - first:
+      213: -2835916384839390440
+    second: robot_turnaround_27
+  - first:
+      213: -1913554584105707968
+    second: robot_turnaround_28
+  - first:
+      213: -9051525902079186983
+    second: robot_turnaround_29
+  - first:
+      213: 6802276876064396753
+    second: robot_turnaround_30
+  - first:
+      213: 6518205866756582078
+    second: robot_turnaround_31
+  - first:
+      213: -2333992712188630095
+    second: robot_turnaround_32
+  - first:
+      213: 5928600486301610745
+    second: robot_turnaround_33
+  - first:
+      213: 4301917896384821631
+    second: robot_turnaround_34
+  - first:
+      213: -3426145938597568395
+    second: robot_turnaround_35
+  - first:
+      213: 8068192438953867249
+    second: robot_turnaround_36
+  - first:
+      213: 8929127083314627204
+    second: robot_turnaround_37
+  - first:
+      213: -4255152389922919868
+    second: robot_turnaround_38
+  - first:
+      213: -9014528388221283709
+    second: robot_turnaround_39
+  - first:
+      213: 7000561882652061327
+    second: robot_turnaround_40
+  - first:
+      213: -6636373275866915542
+    second: robot_turnaround_41
+  - first:
+      213: -5859408819290007180
+    second: robot_turnaround_42
+  - first:
+      213: 5766233319997977836
+    second: robot_turnaround_43
+  - first:
+      213: -1162885823773275790
+    second: robot_turnaround_44
+  - first:
+      213: -3631005917821464986
+    second: robot_turnaround_45
+  - first:
+      213: 4376146346433747809
+    second: robot_turnaround_46
+  - first:
+      213: 5137672536891014458
+    second: robot_turnaround_47
+  - first:
+      213: 8798469785005279333
+    second: robot_turnaround_48
+  - first:
+      213: 6882014246648499601
+    second: robot_turnaround_49
+  - first:
+      213: 971492705381328520
+    second: robot_turnaround_50
+  - first:
+      213: 3485758035177986891
+    second: robot_turnaround_51
+  - first:
+      213: -7903050841354633032
+    second: robot_turnaround_52
+  - first:
+      213: -6221064544617900681
+    second: robot_turnaround_53
+  - first:
+      213: 9083986696870191805
+    second: robot_turnaround_54
+  - first:
+      213: 9160713201974627678
+    second: robot_turnaround_55
+  - first:
+      213: -790541648653935574
+    second: robot_turnaround_56
+  - first:
+      213: 629946028743732336
+    second: robot_turnaround_57
+  - first:
+      213: 517448354937889296
+    second: robot_turnaround_58
+  - first:
+      213: -7786124390814102282
+    second: robot_turnaround_59
+  - first:
+      213: -3469267110772987129
+    second: robot_turnaround_60
+  - first:
+      213: 4281572708585295680
+    second: robot_turnaround_61
+  - first:
+      213: -7714838877773978591
+    second: robot_turnaround_62
+  - first:
+      213: -7798224313070809255
+    second: robot_turnaround_63
+  - first:
+      213: 8371671543282192325
+    second: robot_turnaround_64
+  - first:
+      213: 1309796563953123193
+    second: robot_turnaround_65
+  - first:
+      213: 6270805774884865611
+    second: robot_turnaround_66
+  - first:
+      213: -7671538457788124467
+    second: robot_turnaround_67
+  - first:
+      213: -502953172753115934
+    second: robot_turnaround_68
+  - first:
+      213: -5750518441330760775
+    second: robot_turnaround_69
+  - first:
+      213: 3909044090697466563
+    second: robot_turnaround_70
+  - first:
+      213: 3367276072006274231
+    second: robot_turnaround_71
+  - first:
+      213: -3538278650609673895
+    second: robot_turnaround_72
+  - first:
+      213: 3675113067081431689
+    second: robot_turnaround_73
+  - first:
+      213: 4753895658425075846
+    second: robot_turnaround_74
+  - first:
+      213: -1982453024185125918
+    second: robot_turnaround_75
+  - first:
+      213: 5629351566861501753
+    second: robot_turnaround_76
+  - first:
+      213: 9222049891869782710
+    second: robot_turnaround_77
+  - first:
+      213: -4850024608127403358
+    second: robot_turnaround_78
+  - first:
+      213: -1201669679655393858
+    second: robot_turnaround_79
+  - first:
+      213: 4256349388711337674
+    second: robot_turnaround_80
+  - first:
+      213: 1774064844367037256
+    second: robot_turnaround_81
+  - first:
+      213: 1114927068361328331
+    second: robot_turnaround_82
+  - first:
+      213: 1334419897917718031
+    second: robot_turnaround_83
+  - first:
+      213: 1057219524227311887
+    second: robot_turnaround_84
+  - first:
+      213: -240099152704351749
+    second: robot_turnaround_85
+  - first:
+      213: -5640359082530358589
+    second: robot_turnaround_86
+  - first:
+      213: -8611352376816095520
+    second: robot_turnaround_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot_turnaround_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a9ccb12109576c0800000000000000
+      internalID: -4146249474474468860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_1
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a9d3aa0dcc39570800000000000000
+      internalID: 8472340520595462671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_2
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3ec5ba1a0fe5c20800000000000000
+      internalID: 3197257362635023269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_3
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdf587393c274c90800000000000000
+      internalID: -7185726056190050875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_4
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fed183d66e554440800000000000000
+      internalID: 4919441963700313846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_5
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be02402611521c00800000000000000
+      internalID: 869846833508257461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_6
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862db0490e64e4a30800000000000000
+      internalID: 4201373432753672808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_7
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 10819
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ce02b68a6d6cec0800000000000000
+      internalID: -3546911637667517399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57347f2c9c5258c70800000000000000
+      internalID: 8972619381095220085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_9
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfe8814c1d3c3c40800000000000000
+      internalID: 5493332837053034438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_10
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb73a9080456de50800000000000000
+      internalID: 6833741878079486968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_11
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c1a0cc044a4bae0800000000000000
+      internalID: -1534420974818419569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_12
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a38d57eef2e1940800000000000000
+      internalID: 5268701315295885844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_13
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda61ab4172329760800000000000000
+      internalID: 7463082994687896287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_14
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2dce5341a17a850800000000000000
+      internalID: 6388103270554718944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_15
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 9738
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4141a26d231f896d0800000000000000
+      internalID: -2983369552489212908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173ce4f7068aefd50800000000000000
+      internalID: 6773036022017999729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_17
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7213a6891c46f24e0800000000000000
+      internalID: -2004272526508019417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_18
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a203063bd76a6b0800000000000000
+      internalID: -5285398903306311129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_19
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59f02faa8fd11f60800000000000000
+      internalID: 8003423799550736731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_20
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fffdc0a16f28ee0800000000000000
+      internalID: -1260174353964728546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_21
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68226c703c7b44a10800000000000000
+      internalID: 1892839791679382150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_22
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49af618c9b2437760800000000000000
+      internalID: 7454375173921634964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_23
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 8657
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3970aa97e590943d0800000000000000
+      internalID: -3222033757034117229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1ebf9e539c4f850800000000000000
+      internalID: 6409969403051106750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_25
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2f9a322b86c98d0800000000000000
+      internalID: -2838278550838447431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_26
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2912f7e38a51c1610800000000000000
+      internalID: 1593172180529521042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_27
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b20f4c21dc4a8d0800000000000000
+      internalID: -2835916384839390440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_28
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0461f048e30b175e0800000000000000
+      internalID: -1913554584105707968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_29
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7a25b2625826280800000000000000
+      internalID: -9051525902079186983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_30
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d51cad57ca866e50800000000000000
+      internalID: 6802276876064396753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_31
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 7576
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebaa4ec63b1557a50800000000000000
+      internalID: 6518205866756582078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb65a98efdfb9fd0800000000000000
+      internalID: -2333992712188630095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_33
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f237313bbe964250800000000000000
+      internalID: 5928600486301610745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_34
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79b9e2c88b73bb30800000000000000
+      internalID: 4301917896384821631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_35
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570ae3ddb62e370d0800000000000000
+      internalID: -3426145938597568395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_36
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7765fa64af7ff60800000000000000
+      internalID: 8068192438953867249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_37
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482c94316c1aaeb70800000000000000
+      internalID: 8929127083314627204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_38
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a6d753279a2f4c0800000000000000
+      internalID: -4255152389922919868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_39
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 6495
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38255622136f5e280800000000000000
+      internalID: -9014528388221283709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ead9311fdf62160800000000000000
+      internalID: 7000561882652061327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_41
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d9e07aaadd6e3a0800000000000000
+      internalID: -6636373275866915542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_42
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4799d6c29b23faea0800000000000000
+      internalID: -5859408819290007180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_43
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4308a57a6c50050800000000000000
+      internalID: 5766233319997977836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_44
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27908a721899cdfe0800000000000000
+      internalID: -1162885823773275790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_45
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e09ea0b531c9dc0800000000000000
+      internalID: -3631005917821464986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_46
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b9e409ae13bbc30800000000000000
+      internalID: 4376146346433747809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_47
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 5414
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d3ba5a3fdac4740800000000000000
+      internalID: 5137672536891014458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5684f3637a17a1a70800000000000000
+      internalID: 8798469785005279333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_49
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d49aeae73d18f50800000000000000
+      internalID: 6882014246648499601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_50
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8862326e77f6b7d00800000000000000
+      internalID: 971492705381328520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_51
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b5fb3f676ef5030800000000000000
+      internalID: 3485758035177986891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_52
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b08437c129b25290800000000000000
+      internalID: -7903050841354633032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_53
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775d54dd1c65aa9a0800000000000000
+      internalID: -6221064544617900681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_54
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2625395cdc01e70800000000000000
+      internalID: 9083986696870191805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_55
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 4333
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dcde42f14612f70800000000000000
+      internalID: 9160713201974627678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c94db1f8e6705f0800000000000000
+      internalID: -790541648653935574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_57
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c20f653940eb800800000000000000
+      internalID: 629946028743732336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_58
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012eea989885e2700800000000000000
+      internalID: 517448354937889296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_59
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc45848e1122f390800000000000000
+      internalID: -7786124390814102282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_60
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b2e6791ffaadfc0800000000000000
+      internalID: -3469267110772987129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_61
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fcb3791b33b6b30800000000000000
+      internalID: 4281572708585295680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_62
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124a8e66ae26fe490800000000000000
+      internalID: -7714838877773978591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_63
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 3252
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f8994dd4427c390800000000000000
+      internalID: -7798224313070809255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfc491e9e62e2470800000000000000
+      internalID: 8371671543282192325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_65
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ff37a09055d2210800000000000000
+      internalID: 1309796563953123193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_66
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b460b7bc0a0660750800000000000000
+      internalID: 6270805774884865611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_67
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc27ace0b68398590800000000000000
+      internalID: -7671538457788124467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_68
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4156f01c62509f0800000000000000
+      internalID: -502953172753115934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_69
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3a526f1fd0230b0800000000000000
+      internalID: -5750518441330760775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_70
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2cc55b3e6bf3630800000000000000
+      internalID: 3909044090697466563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_71
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 2171
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc4b943fb7fabe20800000000000000
+      internalID: 3367276072006274231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959df0a505285eec0800000000000000
+      internalID: -3538278650609673895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_73
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98af8c8ecdf900330800000000000000
+      internalID: 3675113067081431689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_74
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688c2b30aea39f140800000000000000
+      internalID: 4753895658425075846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_75
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3fb8d5a79ec74e0800000000000000
+      internalID: -1982453024185125918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_76
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935819aac697f1e40800000000000000
+      internalID: 5629351566861501753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_77
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2f3d1248d4bff70800000000000000
+      internalID: 9222049891869782710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_78
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aab9a0c05041bcb0800000000000000
+      internalID: -4850024608127403358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_79
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 1090
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb568c60bcfc25fe0800000000000000
+      internalID: -1201669679655393858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace171ac737911b30800000000000000
+      internalID: 4256349388711337674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_81
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8438109939ebe9810800000000000000
+      internalID: 1774064844367037256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_82
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc60524f244097f00800000000000000
+      internalID: 1114927068361328331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_83
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e399cb3dfc48210800000000000000
+      internalID: 1334419897917718031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_84
+      rect:
+        serializedVersion: 2
+        x: 5404
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f092d2f4e8ffbae00800000000000000
+      internalID: 1057219524227311887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_85
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf15f2cb71ffaacf0800000000000000
+      internalID: -240099152704351749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_86
+      rect:
+        serializedVersion: 2
+        x: 8106
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca31206c4b69b1b0800000000000000
+      internalID: -5640359082530358589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_turnaround_87
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 9
+        width: 1351
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee292063a45e7880800000000000000
+      internalID: -8611352376816095520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ccde53bd5e5025d40a35b381efd9bd2e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":11.0},"gridSpriteSize":{"x":1351.0,"y":1081.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      robot_turnaround_0: -4146249474474468860
+      robot_turnaround_1: 8472340520595462671
+      robot_turnaround_10: 6833741878079486968
+      robot_turnaround_11: -1534420974818419569
+      robot_turnaround_12: 5268701315295885844
+      robot_turnaround_13: 7463082994687896287
+      robot_turnaround_14: 6388103270554718944
+      robot_turnaround_15: -2983369552489212908
+      robot_turnaround_16: 6773036022017999729
+      robot_turnaround_17: -2004272526508019417
+      robot_turnaround_18: -5285398903306311129
+      robot_turnaround_19: 8003423799550736731
+      robot_turnaround_2: 3197257362635023269
+      robot_turnaround_20: -1260174353964728546
+      robot_turnaround_21: 1892839791679382150
+      robot_turnaround_22: 7454375173921634964
+      robot_turnaround_23: -3222033757034117229
+      robot_turnaround_24: 6409969403051106750
+      robot_turnaround_25: -2838278550838447431
+      robot_turnaround_26: 1593172180529521042
+      robot_turnaround_27: -2835916384839390440
+      robot_turnaround_28: -1913554584105707968
+      robot_turnaround_29: -9051525902079186983
+      robot_turnaround_3: -7185726056190050875
+      robot_turnaround_30: 6802276876064396753
+      robot_turnaround_31: 6518205866756582078
+      robot_turnaround_32: -2333992712188630095
+      robot_turnaround_33: 5928600486301610745
+      robot_turnaround_34: 4301917896384821631
+      robot_turnaround_35: -3426145938597568395
+      robot_turnaround_36: 8068192438953867249
+      robot_turnaround_37: 8929127083314627204
+      robot_turnaround_38: -4255152389922919868
+      robot_turnaround_39: -9014528388221283709
+      robot_turnaround_4: 4919441963700313846
+      robot_turnaround_40: 7000561882652061327
+      robot_turnaround_41: -6636373275866915542
+      robot_turnaround_42: -5859408819290007180
+      robot_turnaround_43: 5766233319997977836
+      robot_turnaround_44: -1162885823773275790
+      robot_turnaround_45: -3631005917821464986
+      robot_turnaround_46: 4376146346433747809
+      robot_turnaround_47: 5137672536891014458
+      robot_turnaround_48: 8798469785005279333
+      robot_turnaround_49: 6882014246648499601
+      robot_turnaround_5: 869846833508257461
+      robot_turnaround_50: 971492705381328520
+      robot_turnaround_51: 3485758035177986891
+      robot_turnaround_52: -7903050841354633032
+      robot_turnaround_53: -6221064544617900681
+      robot_turnaround_54: 9083986696870191805
+      robot_turnaround_55: 9160713201974627678
+      robot_turnaround_56: -790541648653935574
+      robot_turnaround_57: 629946028743732336
+      robot_turnaround_58: 517448354937889296
+      robot_turnaround_59: -7786124390814102282
+      robot_turnaround_6: 4201373432753672808
+      robot_turnaround_60: -3469267110772987129
+      robot_turnaround_61: 4281572708585295680
+      robot_turnaround_62: -7714838877773978591
+      robot_turnaround_63: -7798224313070809255
+      robot_turnaround_64: 8371671543282192325
+      robot_turnaround_65: 1309796563953123193
+      robot_turnaround_66: 6270805774884865611
+      robot_turnaround_67: -7671538457788124467
+      robot_turnaround_68: -502953172753115934
+      robot_turnaround_69: -5750518441330760775
+      robot_turnaround_7: -3546911637667517399
+      robot_turnaround_70: 3909044090697466563
+      robot_turnaround_71: 3367276072006274231
+      robot_turnaround_72: -3538278650609673895
+      robot_turnaround_73: 3675113067081431689
+      robot_turnaround_74: 4753895658425075846
+      robot_turnaround_75: -1982453024185125918
+      robot_turnaround_76: 5629351566861501753
+      robot_turnaround_77: 9222049891869782710
+      robot_turnaround_78: -4850024608127403358
+      robot_turnaround_79: -1201669679655393858
+      robot_turnaround_8: 8972619381095220085
+      robot_turnaround_80: 4256349388711337674
+      robot_turnaround_81: 1774064844367037256
+      robot_turnaround_82: 1114927068361328331
+      robot_turnaround_83: 1334419897917718031
+      robot_turnaround_84: 1057219524227311887
+      robot_turnaround_85: -240099152704351749
+      robot_turnaround_86: -5640359082530358589
+      robot_turnaround_87: -8611352376816095520
+      robot_turnaround_9: 5493332837053034438
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
