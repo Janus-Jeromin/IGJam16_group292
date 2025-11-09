@@ -32,6 +32,12 @@ public class MainMenuManager : MonoBehaviour
         _wasAwaken = true;
     }
 
+    private void Start()
+    {
+        _audioMixer.SetFloat("Volume Music", CalcAttenuationForVolume(_musicSlider.value));
+        _audioMixer.SetFloat("Volume SFX", CalcAttenuationForVolume(_sfxSlider.value));
+    }
+
     public void OnStartLevelClicked(string levelName)
     {
         _loadOverlay.SetActive(true);
