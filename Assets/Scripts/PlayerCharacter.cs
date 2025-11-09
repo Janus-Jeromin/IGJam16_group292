@@ -17,8 +17,10 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private float kazooieTime;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float standAngle;
+    [SerializeField] private float modelRotationSpeed;
     [SerializeField] private AudioSource audioSourceJump;
     [SerializeField] private AudioSource audioSourceDeath;
+    [SerializeField] private Transform modelTransform;
     [SerializeField] private SpriteRenderer rendererModel;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private ParticleSystem explosion;
@@ -66,6 +68,7 @@ public class PlayerCharacter : MonoBehaviour
 
     void FixedUpdate()
     {
+        // For collision detection, the helper must be at the same spot as the controller
         collisionHelper.transform.SetPositionAndRotation(transform.position, transform.rotation);
         
         // We need to do this first because the results are used in other functions
@@ -86,6 +89,9 @@ public class PlayerCharacter : MonoBehaviour
             _rb.linearVelocity = transform.TransformVector(localVelocity);
             
             transform.Rotate(new Vector3(0, 0, 1), rotationSpeed * Time.fixedDeltaTime);
+            
+            // Make the model face into the correct direction
+            modelTransform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         }
         // Move right
         if (_inputRight)
@@ -97,6 +103,9 @@ public class PlayerCharacter : MonoBehaviour
             _rb.linearVelocity = transform.TransformVector(localVelocity);
             
             transform.Rotate(new Vector3(0, 0, 1), -rotationSpeed * Time.fixedDeltaTime);
+            
+            // Make the model face into the correct direction
+            modelTransform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         }
         
         // Jump
@@ -116,7 +125,14 @@ public class PlayerCharacter : MonoBehaviour
             
             // Play corresponding sound
             audioSourceJump.Play();
+            
+            // Since we ourselves rotated, we now rotate the model too, so that it is the same after jumping.
+            // We then rotate it back in the following update intervals.
+            modelTransform.Rotate(new Vector3(0, 0, 1), 180);
         }
+        
+        // Rotate the model back if it was rotated
+        modelTransform.transform.rotation = Quaternion.Lerp(modelTransform.transform.rotation, transform.rotation, Time.fixedDeltaTime * modelRotationSpeed);
 
         // Clear discrete input
         _inputJump = false;
