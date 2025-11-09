@@ -1,9 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections.Generic;
 using DefaultNamespace;
-using UnityEditor.Animations;
 using Random = UnityEngine.Random;
 
 /// <summary>
