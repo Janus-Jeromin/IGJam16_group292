@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 using DefaultNamespace;
+using UnityEditor.Animations;
 using Random = UnityEngine.Random;
 
 /// <summary>
@@ -22,6 +23,7 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private AudioSource audioSourceDeath;
     [SerializeField] private Transform modelTransform;
     [SerializeField] private SpriteRenderer rendererModel;
+    [SerializeField] private Animator animator;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
     [SerializeField] private ParticleSystem explosion;
     
@@ -43,6 +45,11 @@ public class PlayerCharacter : MonoBehaviour
     private bool _inputLeft;
     private bool _inputRight;
     
+    // Animation trigger
+    private int _animationTriggerWalk;
+    private int _animationTriggerStand;
+    private int _animationTriggerFall;
+    
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -53,6 +60,10 @@ public class PlayerCharacter : MonoBehaviour
         _upmostCollisionNormalAngle = 0;
         _effectiveMovementLeft = 0;
         _effectiveMovementRight = 0;
+        
+        _animationTriggerWalk = Animator.StringToHash("Start Walk");
+        _animationTriggerStand = Animator.StringToHash("Start Standing");
+        _animationTriggerFall = Animator.StringToHash("Start Falling");
     }
 
     private void Update()
@@ -140,6 +151,14 @@ public class PlayerCharacter : MonoBehaviour
         // Rotate the model back if it was rotated
         modelTransform.transform.rotation = Quaternion.Lerp(modelTransform.transform.rotation, transform.rotation, Time.fixedDeltaTime * modelRotationSpeed);
 
+        // Trigger the correct animation for the current state
+        if (!_grounded)
+            animator.SetTrigger(_animationTriggerFall);
+        else if (_inputLeft || _inputRight)
+            animator.SetTrigger(_animationTriggerWalk);
+        else
+            animator.SetTrigger(_animationTriggerStand);
+        
         // Clear discrete input
         _inputJump = false;
     }

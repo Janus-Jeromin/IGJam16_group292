@@ -5427,6 +5427,7 @@ MonoBehaviour:
   audioSourceDeath: {fileID: 3576591116644637414}
   modelTransform: {fileID: 7586928843750309744}
   rendererModel: {fileID: 241719808669779031}
+  animator: {fileID: 4592353316042836654}
   collisionHelper: {fileID: 41428069169309680}
   explosion: {fileID: 0}
 --- !u!199 &938503337513612985
