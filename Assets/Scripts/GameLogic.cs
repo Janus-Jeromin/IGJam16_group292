@@ -25,15 +25,22 @@ namespace DefaultNamespace
         [SerializeField] private string _menuSceneName = "Main Menu";
         [SerializeField] private AudioSource _audioSourceLevelStart;
 
-        private bool _hasWon = false;
-        private bool _hasLost = false;
+        enum EnumGameState
+        {
+            eGameStateOnGoing,
+            eGameStateWon,
+            eGameStateLost,
+        }
+        
+        private EnumGameState _gameState = EnumGameState.eGameStateOnGoing;
         
         private float _timeUntilReset = 1.5f;
  
         public void KillPlayer()
         {
             _player.GetComponent<PlayerCharacter>().Die();
-            _hasLost = true;
+            _gameState = EnumGameState.eGameStateLost;
+            ScoreManager.Instance?.OnPlayerDeath();
         }
 
         private void Awake()
@@ -43,13 +50,14 @@ namespace DefaultNamespace
 
         private void Start()
         {
-            ResetPlayer();
+            _player.position = _startPoint.position;
+            _player.rotation = _startPoint.rotation;
             _audioSourceLevelStart.Play();
         }
         
         private void Update()
         {
-            if (_hasLost)
+            if (_gameState == EnumGameState.eGameStateLost)
             {
                 _timeUntilReset -= Time.deltaTime;
 
@@ -78,21 +86,18 @@ namespace DefaultNamespace
                 OnGameWon();
             }
         }
-
-        private void ResetPlayer()
-        {
-            _player.GetComponent<PlayerCharacter>().ResetPlayer(_startPoint.position, _startPoint.rotation);
-        }
         
         private void OnGameWon()
         {
-            if (_hasWon)
+            if (_gameState == EnumGameState.eGameStateWon)
                 return;
             
-            _hasWon = true;
+            _gameState = EnumGameState.eGameStateWon;
+            
+            ScoreManager.Instance?.OnLevelCleared();
             
             if (!string.IsNullOrEmpty(_nextLevelName)) 
-                SceneManager.LoadScene(_nextLevelName);
+                SceneManager.LoadSceneAsync(_nextLevelName);
             else
                 Debug.Log("There is no next level.");
         }

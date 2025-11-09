@@ -37,6 +37,8 @@ public class MainMenuManager : MonoBehaviour
         _loadOverlay.SetActive(true);
         SceneManager.LoadSceneAsync(levelName);
         gameObject.SetActive(false);
+        
+        ScoreManager.Instance?.StartScore();
     }
 
     public void OnOpenSubmenuClicked(GameObject submenu)

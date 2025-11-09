@@ -17,7 +17,7 @@ public class MusicPlayer : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

@@ -17,11 +17,10 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private float kazooieTime;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float standAngle;
-    [SerializeField] private bool flipCameraOnly;
     [SerializeField] private AudioSource audioSourceJump;
     [SerializeField] private AudioSource audioSourceDeath;
+    [SerializeField] private SpriteRenderer rendererModel;
     [SerializeField] private PlayerCharacterCollisionHelper collisionHelper;
-    [SerializeField] private CameraConnector cameraConnector;
     [SerializeField] private ParticleSystem explosion;
     
     private Rigidbody2D _rb;
@@ -112,11 +111,8 @@ public class PlayerCharacter : MonoBehaviour
             _currentKazooieTime = 0.0f;
             _jumpCooldownTime = jumpCooldown;
 
-            // Either flip ourselves or the camera, depending on the game mode
-            if (flipCameraOnly)
-                cameraConnector.flipCamera = !cameraConnector.flipCamera;
-            else
-                transform.Rotate(new Vector3(0, 0, 1), 180);
+            // Either flip ourselves
+            transform.Rotate(new Vector3(0, 0, 1), 180);
             
             // Play corresponding sound
             audioSourceJump.Play();
@@ -138,19 +134,11 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
-    // Is called by the game logic after the player has been killed or at the start of the level
-    public void ResetPlayer(Vector3 position, Quaternion rotation)
-    {
-        transform.position = position;
-        transform.rotation = rotation;
-        _rb.linearVelocity = Vector2.zero;
-    }
-
     public void Die()
     {
         GetComponent<ParticleSystem>().Play();
-        GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<AudioSource>().Play();
+        rendererModel.enabled = false;
         _rb.simulated = false;
     }
     
