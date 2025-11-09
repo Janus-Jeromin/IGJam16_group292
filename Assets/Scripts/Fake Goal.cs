@@ -13,6 +13,7 @@ public class FakeGoal : MonoBehaviour
     [SerializeField] private List<GameObject> objectsToEnable;
     [SerializeField] private List<Behaviour> componentsToEnable;
     [SerializeField] private Rigidbody2D rigidBodyToEnable;
+    [SerializeField] private Camera camera;
 
     private bool _wasAlreadyTriggered;
 
@@ -39,5 +40,14 @@ public class FakeGoal : MonoBehaviour
         
         rigidBodyToEnable.bodyType = RigidbodyType2D.Dynamic;
         rigidBodyToEnable.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+    }
+
+    private void Update()
+    {
+        if (_wasAlreadyTriggered)
+        {
+             // camera.orthographicSize lerp to 20
+            camera.orthographicSize = Mathf.Lerp(camera.orthographicSize, 20f, Time.deltaTime * 2.0f);
+        }
     }
 }
